@@ -14,5 +14,6 @@ namespace Data.DAO
         public required string Name { get; set; }
         public string? Patronymic { get; set; }
         public virtual Groups? Group { get; set; }
+        public int GroupID { get; set; }
     }
 }
