@@ -25,11 +25,11 @@ namespace Data
             modelBuilder.Entity<Presence>()
                 .HasOne(Presence => Presence.Status);
         }
-        DbSet<Subjects> Subjects { get; set; }
-        DbSet<Statuses> Statuses { get; set; }
-        DbSet<Groups> Groups { get; set; }
-        DbSet<Students> Students { get; set; }
-        DbSet<GroupsSubjects> GroupsSubjects { get; set; }
-        DbSet<Presence> Presence { get; set; }
+        public DbSet<Subjects> Subjects { get; set; }
+        public DbSet<Statuses> Statuses { get; set; }
+        public DbSet<Groups> Groups { get; set; }
+        public DbSet<Students> Students { get; set; }
+        public DbSet<GroupsSubjects> GroupsSubjects { get; set; }
+        public DbSet<Presence> Presence { get; set; }
     }
 }

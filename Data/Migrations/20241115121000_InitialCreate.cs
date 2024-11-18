@@ -13,7 +13,7 @@ namespace Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Groups",
+                name: "GetGroups",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "integer", nullable: false)
@@ -68,7 +68,7 @@ namespace Data.Migrations
                     table.ForeignKey(
                         name: "FK_Students_Groups_GroupID",
                         column: x => x.GroupID,
-                        principalTable: "Groups",
+                        principalTable: "GetGroups",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -89,7 +89,7 @@ namespace Data.Migrations
                     table.ForeignKey(
                         name: "FK_GroupsSubjects_Groups_GroupID",
                         column: x => x.GroupID,
-                        principalTable: "Groups",
+                        principalTable: "GetGroups",
                         principalColumn: "ID");
                     table.ForeignKey(
                         name: "FK_GroupsSubjects_Subjects_SubjectID",
@@ -181,7 +181,7 @@ namespace Data.Migrations
                 name: "Subjects");
 
             migrationBuilder.DropTable(
-                name: "Groups");
+                name: "GetGroups");
         }
     }
 }

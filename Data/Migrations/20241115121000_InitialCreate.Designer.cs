@@ -25,7 +25,7 @@ namespace Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Data.DAO.Groups", b =>
+            modelBuilder.Entity("Data.DAO.GetGroups", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Groups");
+                    b.ToTable("GetGroups");
                 });
 
             modelBuilder.Entity("Data.DAO.GroupsSubjects", b =>
@@ -161,7 +161,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.GroupsSubjects", b =>
                 {
-                    b.HasOne("Data.DAO.Groups", "Group")
+                    b.HasOne("Data.DAO.GetGroups", "Group")
                         .WithMany()
                         .HasForeignKey("GroupID");
 
@@ -203,7 +203,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.Students", b =>
                 {
-                    b.HasOne("Data.DAO.Groups", "Group")
+                    b.HasOne("Data.DAO.GetGroups", "Group")
                         .WithMany()
                         .HasForeignKey("GroupID")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\repository\\sqlgrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\repository\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\repository\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\groupssubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\groupssubjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\groups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\groups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\statuses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\statuses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\dao\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|solutionrelative:data\\dao\\subjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|c:\\users\\class_student\\desktop\\presence\\consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|solutionrelative:consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RemoteDatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\RemoteDatabaseContext.cs",
-              "RelativeDocumentMoniker": "Data\\RemoteDatabaseContext.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\RemoteDatabaseContext.cs",
-              "RelativeToolTip": "Data\\RemoteDatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:02:51.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Subjects.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Subjects.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\Subjects.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Subjects.cs",
-              "RelativeToolTip": "Data\\DAO\\Subjects.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:19.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Statuses.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Statuses.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\Statuses.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Statuses.cs",
-              "RelativeToolTip": "Data\\DAO\\Statuses.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:17.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Groups.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Groups.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\Groups.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Groups.cs",
-              "RelativeToolTip": "Data\\DAO\\Groups.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:14.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GroupsSubjects.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\GroupsSubjects.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\GroupsSubjects.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\GroupsSubjects.cs",
-              "RelativeToolTip": "Data\\DAO\\GroupsSubjects.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:15.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Students.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Students.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\Students.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Students.cs",
-              "RelativeToolTip": "Data\\DAO\\Students.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleUI\\Program.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\Program.cs",
+              "RelativeToolTip": "ConsoleUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:18.568Z",
+              "WhenOpened": "2024-11-18T07:06:13.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLGroupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\SQLGroupRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\SQLGroupRepository.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\SQLGroupRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\SQLGroupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T07:00:23.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Presence.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Presence.cs",
-              "RelativeDocumentMoniker": "Data\\DAO\\Presence.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\DAO\\Presence.cs",
-              "RelativeToolTip": "Data\\DAO\\Presence.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "IGroupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\IGroupRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repository\\IGroupRepository.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\IGroupRepository.cs",
+              "RelativeToolTip": "Data\\Repository\\IGroupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:15:16.863Z",
+              "WhenOpened": "2024-11-18T06:40:53.75Z",
               "EditorCaption": ""
             }
           ]
