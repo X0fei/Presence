@@ -16,7 +16,29 @@ namespace Data.Repository
         }
         public bool AddGroup(Groups group)
         {
-            throw new NotImplementedException();
+            _dbContext.Groups.Add(group);
+            return _dbContext.SaveChanges() > 0;
+        }
+
+        public bool AddGroupWithStudents(Groups groups, IEnumerable<Students> students)
+        {
+            using var transaction = _dbContext.Database.BeginTransaction();
+            try
+            {
+                _dbContext.Groups.Add(groups);
+                foreach (var item in students)
+                {
+                    item.Group = groups;
+                    _dbContext.Students.Add(item);
+                }
+                transaction.Commit();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+            }
+            return false;
         }
 
         public IEnumerable<Groups> GetGroups()

@@ -1,5 +1,7 @@
-﻿using Data;
+﻿using ConsoleUI;
+using Data;
 using Data.Repository;
+using Domain.Service;
 
 //Выводит список всех групп и их ID
 void ShowAllGrops(IGroupRepository groupRepository)
@@ -12,5 +14,9 @@ void ShowAllGrops(IGroupRepository groupRepository)
 
 RemoteDatabaseContext remoteDatabaseContext = new RemoteDatabaseContext();
 SQLGroupRepository groupRepository = new SQLGroupRepository(remoteDatabaseContext);
+GroupService groupService = new GroupService(groupRepository);
+GroupUI group = new GroupUI(groupService);
+
+group.AddGroup();
 
 ShowAllGrops(groupRepository);

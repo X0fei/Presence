@@ -21,5 +21,15 @@ namespace Domain.Service
         {
             _groupRepository.AddGroup(new Groups { Name = addGroupRequest.Name});
         }
+
+        public void AddGroupWithStudents(AddGroupWithStudentsRequest addGroupWithStudents)
+        {
+            Groups groups = new Groups { Name = addGroupWithStudents.AddGroupRequest.Name };
+            List<Students> students = addGroupWithStudents
+                .AddStudentRequests
+                .Select(it => new Students { Name = it.StudentName, Surname = it.StudentSurname })
+                .ToList();
+            _groupRepository.AddGroupWithStudents(groups, students);
+        }
     }
 }

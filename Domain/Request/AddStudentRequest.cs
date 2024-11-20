@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Request
 {
-    public class AddGroupRequest
+    public class AddStudentRequest
     {
-        public string Name { get; set; }
+        public string StudentName { get; set; }
+        public string StudentSurname { get; set; }
     }
 }
- 
