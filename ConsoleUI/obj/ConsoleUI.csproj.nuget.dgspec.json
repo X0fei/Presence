@@ -170,7 +170,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
