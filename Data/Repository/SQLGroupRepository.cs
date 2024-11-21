@@ -26,11 +26,13 @@ namespace Data.Repository
             try
             {
                 _dbContext.Groups.Add(groups);
+                _dbContext.SaveChanges();
                 foreach (var item in students)
                 {
                     item.Group = groups;
                     _dbContext.Students.Add(item);
                 }
+                _dbContext.SaveChanges();
                 transaction.Commit();
                 return true;
             }

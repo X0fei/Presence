@@ -26,16 +26,15 @@ namespace ConsoleUI
             AddGroupRequest addGroupRequest = new AddGroupRequest { Name = Console.ReadLine() };
             List<AddStudentRequest> addStudentRequests = new List<AddStudentRequest>()
             {
-                new AddStudentRequest{StudentName = "123"},
-                new AddStudentRequest{StudentName = "321"},
-                new AddStudentRequest{StudentName = "222"},
-                new AddStudentRequest{StudentName = "444"}
+                new AddStudentRequest{StudentName = "123", StudentSurname = "123"},
+                new AddStudentRequest{StudentName = "321", StudentSurname = "321"},
+                new AddStudentRequest{StudentName = "222", StudentSurname = "222"},
+                new AddStudentRequest{StudentName = "444", StudentSurname = "444"}
             };
             AddGroupWithStudentsRequest addGroupWithStudentsRequest = new AddGroupWithStudentsRequest
             {
                 AddGroupRequest = addGroupRequest,
                 AddStudentRequests = addStudentRequests
-
             };
             _groupService.AddGroupWithStudents(addGroupWithStudentsRequest);
         }
