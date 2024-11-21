@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|solutionrelative:consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|c:\\users\\class_student\\desktop\\presence\\consoleui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|solutionrelative:consoleui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D71BFE8D-9EC2-4375-A209-2A40DF6DB752}|Domain\\Domain.csproj|c:\\users\\class_student\\desktop\\presence\\domain\\usecase\\igroupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71BFE8D-9EC2-4375-A209-2A40DF6DB752}|Domain\\Domain.csproj|solutionrelative:domain\\usecase\\igroupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D71BFE8D-9EC2-4375-A209-2A40DF6DB752}|Domain\\Domain.csproj|c:\\users\\class_student\\desktop\\presence\\domain\\service\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D71BFE8D-9EC2-4375-A209-2A40DF6DB752}|Domain\\Domain.csproj|solutionrelative:domain\\service\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|c:\\users\\class_student\\desktop\\presence\\consoleui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|solutionrelative:consoleui\\groupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A590111-45C4-4C09-8408-6632CB5D99DE}|Data\\Data.csproj|c:\\users\\class_student\\desktop\\presence\\data\\repository\\igrouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "ConsoleUI\\Program.cs",
               "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\Program.cs",
               "RelativeToolTip": "ConsoleUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T07:06:13.75Z",
               "EditorCaption": ""
@@ -76,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "GroupUI.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\GroupUI.cs",
               "RelativeDocumentMoniker": "ConsoleUI\\GroupUI.cs",
               "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\GroupUI.cs",
               "RelativeToolTip": "ConsoleUI\\GroupUI.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T06:38:06.998Z",
               "EditorCaption": ""
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\Service\\GroupService.cs",
               "RelativeDocumentMoniker": "Domain\\Service\\GroupService.cs",
@@ -115,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IGroupUseCase.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\UseCase\\IGroupUseCase.cs",
               "RelativeDocumentMoniker": "Domain\\UseCase\\IGroupUseCase.cs",

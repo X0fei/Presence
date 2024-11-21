@@ -2,6 +2,8 @@
 using Data;
 using Data.Repository;
 using Domain.Service;
+using Domain.UseCase;
+using Microsoft.Extensions.DependencyInjection;
 
 //Выводит список всех групп и их ID
 void ShowAllGrops(IGroupRepository groupRepository)
@@ -12,11 +14,15 @@ void ShowAllGrops(IGroupRepository groupRepository)
     }
 }
 
-RemoteDatabaseContext remoteDatabaseContext = new RemoteDatabaseContext();
-SQLGroupRepository groupRepository = new SQLGroupRepository(remoteDatabaseContext);
-GroupService groupService = new GroupService(groupRepository);
-GroupUI group = new GroupUI(groupService);
+IServiceCollection serviceCollection = new ServiceCollection();
 
-group.AddGroupWithStudents();
+serviceCollection
+    .AddDbContext<RemoteDatabaseContext>()
+    .AddSingleton<IGroupRepository, SQLGroupRepository>()
+    .AddSingleton<IGroupUseCase, GroupService>()
+    .AddSingleton<GroupUI>();
 
-ShowAllGrops(groupRepository);
+var serviceProvider = serviceCollection.BuildServiceProvider();
+var groupUI = serviceProvider.GetService<GroupUI>();
+
+groupUI?.AddGroup();
