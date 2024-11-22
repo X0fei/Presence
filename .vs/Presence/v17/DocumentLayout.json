@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67BE8C54-DC1F-410B-9666-48DD8ACC9838}|Presence.API\\Presence.API.csproj|c:\\users\\class_student\\desktop\\presence\\presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67BE8C54-DC1F-410B-9666-48DD8ACC9838}|Presence.API\\Presence.API.csproj|solutionrelative:presence.api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|c:\\users\\class_student\\desktop\\presence\\consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BD8BD82-7CC7-4FEC-AB8B-F7F49C09D6E2}|ConsoleUI\\ConsoleUI.csproj|solutionrelative:consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,6 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Presence.API\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Presence.API\\Controllers\\GroupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T10:31:20.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleUI\\Program.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SQLGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\SQLGroupRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repository\\SQLGroupRepository.cs",
@@ -71,12 +88,11 @@
               "RelativeToolTip": "Data\\Repository\\SQLGroupRepository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAswCAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T07:00:23.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T07:00:23.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GroupUI.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\ConsoleUI\\GroupUI.cs",
               "RelativeDocumentMoniker": "ConsoleUI\\GroupUI.cs",
@@ -84,12 +100,11 @@
               "RelativeToolTip": "ConsoleUI\\GroupUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:38:06.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T06:38:06.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IGroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Data\\Repository\\IGroupRepository.cs",
               "RelativeDocumentMoniker": "Data\\Repository\\IGroupRepository.cs",
@@ -97,12 +112,11 @@
               "RelativeToolTip": "Data\\Repository\\IGroupRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:40:53.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T06:40:53.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\Service\\GroupService.cs",
               "RelativeDocumentMoniker": "Domain\\Service\\GroupService.cs",
@@ -110,12 +124,11 @@
               "RelativeToolTip": "Domain\\Service\\GroupService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:27:08.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T06:27:08.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IGroupUseCase.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\UseCase\\IGroupUseCase.cs",
               "RelativeDocumentMoniker": "Domain\\UseCase\\IGroupUseCase.cs",
@@ -123,12 +136,11 @@
               "RelativeToolTip": "Domain\\UseCase\\IGroupUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:21:15.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T06:21:15.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AddGroupWithStudentsRequest.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\Request\\AddGroupWithStudentsRequest.cs",
               "RelativeDocumentMoniker": "Domain\\Request\\AddGroupWithStudentsRequest.cs",
@@ -136,12 +148,11 @@
               "RelativeToolTip": "Domain\\Request\\AddGroupWithStudentsRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:45:42.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T12:45:42.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AddStudentRequest.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\Request\\AddStudentRequest.cs",
               "RelativeDocumentMoniker": "Domain\\Request\\AddStudentRequest.cs",
@@ -149,12 +160,11 @@
               "RelativeToolTip": "Domain\\Request\\AddStudentRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:03:34.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T13:03:34.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AddGroupRequest.cs",
               "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\Presence\\Domain\\Request\\AddGroupRequest.cs",
               "RelativeDocumentMoniker": "Domain\\Request\\AddGroupRequest.cs",
@@ -162,8 +172,7 @@
               "RelativeToolTip": "Domain\\Request\\AddGroupRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:25:25.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T06:25:25.844Z"
             }
           ]
         }

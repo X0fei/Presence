@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Class_Student\\Desktop\\Presence\\UI\\UI.csproj": {}
+    "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Presence.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Class_Student\\Desktop\\Presence\\UI\\UI.csproj": {
+    "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Presence.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Class_Student\\Desktop\\Presence\\UI\\UI.csproj",
-        "projectName": "UI",
-        "projectPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Presence.API.csproj",
+        "projectName": "Presence.API",
+        "projectPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\Presence.API.csproj",
         "packagesPath": "C:\\Users\\Class_Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\UI\\obj\\",
+        "outputPath": "C:\\Users\\Class_Student\\Desktop\\Presence\\Presence.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Class_Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,6 +63,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
