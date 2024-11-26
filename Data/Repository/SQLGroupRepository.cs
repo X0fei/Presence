@@ -1,4 +1,5 @@
 ﻿using Data.DAO;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,7 +46,7 @@ namespace Data.Repository
 
         public IEnumerable<Groups> GetGroups()
         {
-            return _dbContext.Groups.ToList();
+            return _dbContext.Groups.Include(group => group.Students).ToList();
         }
     }
 }
