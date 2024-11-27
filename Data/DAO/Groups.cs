@@ -11,5 +11,6 @@ namespace Data.DAO
     {
         [Key] public int ID { get; set; }
         public required string Name { get; set; }
+        public virtual IEnumerable<Students> Students { get; set; }
     }
 }

@@ -17,7 +17,13 @@ namespace Presence.API.Controllers
         [HttpGet]
         public ActionResult<GroupResponse> GetAllGroups()
         {
-            _groupService.
+            var result = _groupService.GetGroupsWithStudents()
+                .Select(group => new GroupResponse
+                {
+                    ID = group.ID,
+                    Name = group.Name,
+                    Students = group.Students.Select(user => new StudentResponse)
+                });
             return Ok(new GroupResponse());
         }
     }

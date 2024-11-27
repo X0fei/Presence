@@ -24,28 +24,28 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.GetGroups", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("ID");
+                    b.HasKey("Guid");
 
                     b.ToTable("GetGroups");
                 });
 
             modelBuilder.Entity("Data.DAO.GroupsSubjects", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
 
                     b.Property<int?>("GroupID")
                         .HasColumnType("integer");
@@ -56,7 +56,7 @@ namespace Data.Migrations
                     b.Property<int?>("SubjectID")
                         .HasColumnType("integer");
 
-                    b.HasKey("ID");
+                    b.HasKey("Guid");
 
                     b.HasIndex("GroupID");
 
@@ -95,28 +95,28 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.Statuses", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("ID");
+                    b.HasKey("Guid");
 
                     b.ToTable("Statuses");
                 });
 
             modelBuilder.Entity("Data.DAO.Students", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
 
                     b.Property<int>("GroupID")
                         .HasColumnType("integer");
@@ -132,7 +132,7 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("ID");
+                    b.HasKey("Guid");
 
                     b.HasIndex("GroupID");
 
@@ -141,17 +141,17 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.Subjects", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("ID");
+                    b.HasKey("Guid");
 
                     b.ToTable("Subjects");
                 });

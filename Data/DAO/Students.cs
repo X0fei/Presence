@@ -9,7 +9,7 @@ namespace Data.DAO
 {
     public class Students
     {
-        [Key] public int ID { get; set; }
+        [Key] public Guid Guid { get; set; }
         public required string Surname { get; set; }
         public required string Name { get; set; }
         public string? Patronymic { get; set; }

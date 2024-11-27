@@ -69,7 +69,7 @@ namespace Data.Migrations
                         name: "FK_Students_Groups_GroupID",
                         column: x => x.GroupID,
                         principalTable: "GetGroups",
-                        principalColumn: "ID",
+                        principalColumn: "Guid",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -90,12 +90,12 @@ namespace Data.Migrations
                         name: "FK_GroupsSubjects_Groups_GroupID",
                         column: x => x.GroupID,
                         principalTable: "GetGroups",
-                        principalColumn: "ID");
+                        principalColumn: "Guid");
                     table.ForeignKey(
                         name: "FK_GroupsSubjects_Subjects_SubjectID",
                         column: x => x.SubjectID,
                         principalTable: "Subjects",
-                        principalColumn: "ID");
+                        principalColumn: "Guid");
                 });
 
             migrationBuilder.CreateTable(
@@ -115,19 +115,19 @@ namespace Data.Migrations
                         name: "FK_Presence_GroupsSubjects_GroupSubjectID",
                         column: x => x.GroupSubjectID,
                         principalTable: "GroupsSubjects",
-                        principalColumn: "ID",
+                        principalColumn: "Guid",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Presence_Statuses_StatusID",
                         column: x => x.StatusID,
                         principalTable: "Statuses",
-                        principalColumn: "ID",
+                        principalColumn: "Guid",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Presence_Students_StudentID",
                         column: x => x.StudentID,
                         principalTable: "Students",
-                        principalColumn: "ID",
+                        principalColumn: "Guid",
                         onDelete: ReferentialAction.Cascade);
                 });
 

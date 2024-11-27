@@ -45,9 +45,13 @@ namespace Domain.Service
                         {
                             Guid = student.Guid,
                             Name = student.Name,
-                            Group = student.Group,
-                        }
-                });
+                            Group = new GroupEntity 
+                            { 
+                                ID = group.ID, 
+                                Name = group.Name 
+                            }
+                        }).ToList()
+                }).ToList();
         }
     }
 }

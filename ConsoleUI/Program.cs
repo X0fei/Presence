@@ -5,7 +5,7 @@ using Domain.Service;
 using Domain.UseCase;
 using Microsoft.Extensions.DependencyInjection;
 
-//Выводит список всех групп и их ID
+//Выводит список всех групп и их Guid
 void ShowAllGrops(IGroupRepository groupRepository)
 {
     foreach (var item in groupRepository.GetGroups())
