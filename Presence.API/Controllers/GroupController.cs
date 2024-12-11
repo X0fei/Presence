@@ -6,7 +6,7 @@ using Presence.API.Response;
 namespace Presence.API.Controllers
 {
     [ApiController]
-    [Route("[controller]/api")]
+    [Route("api/[controller]")]
     public class GroupController : ControllerBase
     {
         private readonly IGroupUseCase _groupService;
@@ -14,17 +14,22 @@ namespace Presence.API.Controllers
         {
             _groupService = groupService;
         }
-        [HttpGet]
+        [HttpGet("/groups")]
         public ActionResult<GroupResponse> GetAllGroups()
         {
-            var result = _groupService.GetGroupsWithStudents()
+            var result = _groupService
+                .GetGroupsWithStudents()
                 .Select(group => new GroupResponse
                 {
                     ID = group.ID,
                     Name = group.Name,
-                    Students = group.Students.Select(user => new StudentResponse)
-                });
-            return Ok(new GroupResponse());
+                    Students = group.Students?.Select(user => new StudentResponse
+                    {
+                        Guid = user.Guid,
+                        Name = user.Name,
+                    }).ToList()
+                }).ToList();
+            return Ok(result);
         }
     }
 }
