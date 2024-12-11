@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Presence.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2103d6ae90a24d32ce2d39b7833645a9237e5bff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a6acc4e99280a86c5ed26a326b29d63f4e2cd8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Presence.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Presence.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

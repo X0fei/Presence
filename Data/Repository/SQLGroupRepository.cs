@@ -30,7 +30,7 @@ namespace Data.Repository
                 _dbContext.SaveChanges();
                 foreach (var item in students)
                 {
-                    item.Group = groups;
+                    item.Groups = groups;
                     _dbContext.Students.Add(item);
                 }
                 _dbContext.SaveChanges();
@@ -46,7 +46,7 @@ namespace Data.Repository
 
         public IEnumerable<Groups> GetGroups()
         {
-            return _dbContext.Groups.Include(group => group.Students).ToList();
+            return _dbContext.Groups.Include(users => users.Students).ToList();
         }
     }
 }

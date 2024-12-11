@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(RemoteDatabaseContext))]
-    [Migration("20241115121000_InitialCreate")]
+    [Migration("20241211124152_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -25,30 +25,30 @@ namespace Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Data.DAO.GetGroups", b =>
+            modelBuilder.Entity("Data.DAO.Groups", b =>
                 {
-                    b.Property<int>("Guid")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Guid");
+                    b.HasKey("ID");
 
-                    b.ToTable("GetGroups");
+                    b.ToTable("Groups");
                 });
 
             modelBuilder.Entity("Data.DAO.GroupsSubjects", b =>
                 {
-                    b.Property<int>("Guid")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<int?>("GroupID")
                         .HasColumnType("integer");
@@ -59,7 +59,7 @@ namespace Data.Migrations
                     b.Property<int?>("SubjectID")
                         .HasColumnType("integer");
 
-                    b.HasKey("Guid");
+                    b.HasKey("ID");
 
                     b.HasIndex("GroupID");
 
@@ -82,6 +82,9 @@ namespace Data.Migrations
                     b.Property<int>("StatusID")
                         .HasColumnType("integer");
 
+                    b.Property<Guid>("StudentGuid")
+                        .HasColumnType("uuid");
+
                     b.Property<int>("StudentID")
                         .HasColumnType("integer");
 
@@ -91,37 +94,35 @@ namespace Data.Migrations
 
                     b.HasIndex("StatusID");
 
-                    b.HasIndex("StudentID");
+                    b.HasIndex("StudentGuid");
 
                     b.ToTable("Presence");
                 });
 
             modelBuilder.Entity("Data.DAO.Statuses", b =>
                 {
-                    b.Property<int>("Guid")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Guid");
+                    b.HasKey("ID");
 
                     b.ToTable("Statuses");
                 });
 
             modelBuilder.Entity("Data.DAO.Students", b =>
                 {
-                    b.Property<int>("Guid")
+                    b.Property<Guid>("Guid")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
-
-                    b.Property<int>("GroupID")
+                    b.Property<int>("GroupsID")
                         .HasColumnType("integer");
 
                     b.Property<string>("Name")
@@ -137,31 +138,31 @@ namespace Data.Migrations
 
                     b.HasKey("Guid");
 
-                    b.HasIndex("GroupID");
+                    b.HasIndex("GroupsID");
 
                     b.ToTable("Students");
                 });
 
             modelBuilder.Entity("Data.DAO.Subjects", b =>
                 {
-                    b.Property<int>("Guid")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Guid"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Guid");
+                    b.HasKey("ID");
 
                     b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("Data.DAO.GroupsSubjects", b =>
                 {
-                    b.HasOne("Data.DAO.GetGroups", "Group")
+                    b.HasOne("Data.DAO.Groups", "Group")
                         .WithMany()
                         .HasForeignKey("GroupID");
 
@@ -190,7 +191,7 @@ namespace Data.Migrations
 
                     b.HasOne("Data.DAO.Students", "Student")
                         .WithMany()
-                        .HasForeignKey("StudentID")
+                        .HasForeignKey("StudentGuid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -203,13 +204,18 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.DAO.Students", b =>
                 {
-                    b.HasOne("Data.DAO.GetGroups", "Group")
-                        .WithMany()
-                        .HasForeignKey("GroupID")
+                    b.HasOne("Data.DAO.Groups", "Groups")
+                        .WithMany("Students")
+                        .HasForeignKey("GroupsID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Group");
+                    b.Navigation("Groups");
+                });
+
+            modelBuilder.Entity("Data.DAO.Groups", b =>
+                {
+                    b.Navigation("Students");
                 });
 #pragma warning restore 612, 618
         }

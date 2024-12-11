@@ -1,0 +1,11 @@
+C:\Users\Class_Student\Desktop\Presence\UI\bin\Debug\net8.0\UI.deps.json
+C:\Users\Class_Student\Desktop\Presence\UI\bin\Debug\net8.0\UI.dll
+C:\Users\Class_Student\Desktop\Presence\UI\bin\Debug\net8.0\UI.pdb
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.AssemblyInfoInputs.cache
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.AssemblyInfo.cs
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.csproj.CoreCompileInputs.cache
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.dll
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\refint\UI.dll
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\UI.pdb
+C:\Users\Class_Student\Desktop\Presence\UI\obj\Debug\net8.0\ref\UI.dll

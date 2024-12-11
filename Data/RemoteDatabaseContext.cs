@@ -15,7 +15,7 @@ namespace Data
             modelBuilder.Entity<Presence>().HasKey(it => new {it.LessonNumber,  it.GroupSubjectID});
 
             modelBuilder.Entity<Students>()
-                .HasOne(Students => Students.Group);
+                .HasOne(Students => Students.Groups);
             modelBuilder.Entity<GroupsSubjects>()
                 .HasOne(GroupsSubjects => GroupsSubjects.Group);
             modelBuilder.Entity<GroupsSubjects>()

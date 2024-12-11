@@ -27,7 +27,7 @@ namespace Presence.API.Controllers
                     {
                         Guid = user.Guid,
                         Name = user.Name,
-                    }).ToList()
+                    }).Take(10).ToList()
                 }).ToList();
             return Ok(result);
         }

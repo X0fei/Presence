@@ -13,7 +13,7 @@ namespace Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "GetGroups",
+                name: "Groups",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "integer", nullable: false)
@@ -55,21 +55,20 @@ namespace Data.Migrations
                 name: "Students",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Guid = table.Column<Guid>(type: "uuid", nullable: false),
                     Surname = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Patronymic = table.Column<string>(type: "text", nullable: true),
-                    GroupID = table.Column<int>(type: "integer", nullable: false)
+                    GroupsID = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.ID);
+                    table.PrimaryKey("PK_Students", x => x.Guid);
                     table.ForeignKey(
-                        name: "FK_Students_Groups_GroupID",
-                        column: x => x.GroupID,
-                        principalTable: "GetGroups",
-                        principalColumn: "Guid",
+                        name: "FK_Students_Groups_GroupsID",
+                        column: x => x.GroupsID,
+                        principalTable: "Groups",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -89,13 +88,13 @@ namespace Data.Migrations
                     table.ForeignKey(
                         name: "FK_GroupsSubjects_Groups_GroupID",
                         column: x => x.GroupID,
-                        principalTable: "GetGroups",
-                        principalColumn: "Guid");
+                        principalTable: "Groups",
+                        principalColumn: "ID");
                     table.ForeignKey(
                         name: "FK_GroupsSubjects_Subjects_SubjectID",
                         column: x => x.SubjectID,
                         principalTable: "Subjects",
-                        principalColumn: "Guid");
+                        principalColumn: "ID");
                 });
 
             migrationBuilder.CreateTable(
@@ -105,6 +104,7 @@ namespace Data.Migrations
                     GroupSubjectID = table.Column<int>(type: "integer", nullable: false),
                     LessonNumber = table.Column<int>(type: "integer", nullable: false),
                     Date = table.Column<DateOnly>(type: "date", nullable: false),
+                    StudentGuid = table.Column<Guid>(type: "uuid", nullable: false),
                     StudentID = table.Column<int>(type: "integer", nullable: false),
                     StatusID = table.Column<int>(type: "integer", nullable: false)
                 },
@@ -115,17 +115,17 @@ namespace Data.Migrations
                         name: "FK_Presence_GroupsSubjects_GroupSubjectID",
                         column: x => x.GroupSubjectID,
                         principalTable: "GroupsSubjects",
-                        principalColumn: "Guid",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Presence_Statuses_StatusID",
                         column: x => x.StatusID,
                         principalTable: "Statuses",
-                        principalColumn: "Guid",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Presence_Students_StudentID",
-                        column: x => x.StudentID,
+                        name: "FK_Presence_Students_StudentGuid",
+                        column: x => x.StudentGuid,
                         principalTable: "Students",
                         principalColumn: "Guid",
                         onDelete: ReferentialAction.Cascade);
@@ -152,14 +152,14 @@ namespace Data.Migrations
                 column: "StatusID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Presence_StudentID",
+                name: "IX_Presence_StudentGuid",
                 table: "Presence",
-                column: "StudentID");
+                column: "StudentGuid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Students_GroupID",
+                name: "IX_Students_GroupsID",
                 table: "Students",
-                column: "GroupID");
+                column: "GroupsID");
         }
 
         /// <inheritdoc />
@@ -181,7 +181,7 @@ namespace Data.Migrations
                 name: "Subjects");
 
             migrationBuilder.DropTable(
-                name: "GetGroups");
+                name: "Groups");
         }
     }
 }
